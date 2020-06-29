@@ -26,7 +26,7 @@ public class Ticket {
     private String phone;
     private String grievance;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "MM-dd-yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "MM/dd/yyyy")
     private Date messageDate;
     private boolean contact;
 
