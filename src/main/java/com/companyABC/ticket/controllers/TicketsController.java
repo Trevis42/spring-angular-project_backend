@@ -32,7 +32,7 @@ public class TicketsController {
         ticketRepository.save(ticket);
     }
 
-    @GetMapping("/id")
+    @GetMapping("/{id}")
     public Ticket get(@PathVariable("id") long id) {
         return ticketRepository.getOne(id);
     }
