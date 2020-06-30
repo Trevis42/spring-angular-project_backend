@@ -1,10 +1,10 @@
-package com.companyABC.bike;
+package com.companyABC.ticket;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BikeApplicationTests {
+class TicketApplicationTests {
 
 	@Test
 	void contextLoads() {

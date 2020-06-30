@@ -10,10 +10,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.globomatics</groupId>
-	<artifactId>bike</artifactId>
+	<groupId>com.companyABC</groupId>
+	<artifactId>ticket</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bike</name>
+	<name>ticket</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
