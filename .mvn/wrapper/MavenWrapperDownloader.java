@@ -46,7 +46,7 @@ public class MavenWrapperDownloader {
      */
     private static final String PROPERTY_NAME_WRAPPER_URL = "wrapperUrl";
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         System.out.println("- Downloader started");
         File baseDirectory = new File(args[0]);
         System.out.println("- Using base directory: " + baseDirectory.getAbsolutePath());
@@ -80,7 +80,7 @@ public class MavenWrapperDownloader {
         File outputFile = new File(baseDirectory.getAbsolutePath(), MAVEN_WRAPPER_JAR_PATH);
         if (!outputFile.getParentFile().exists()) {
             if (!outputFile.getParentFile().mkdirs()) {
-                System.out.println(
+                System.err.println(
                         "- ERROR creating output directory '" + outputFile.getParentFile().getAbsolutePath() + "'");
             }
         }
@@ -89,7 +89,7 @@ public class MavenWrapperDownloader {
             downloadFileFromURL(url, outputFile);
             System.out.println("Done");
             System.exit(0);
-        } catch (Throwable e) {
+        } catch (Exception e) {
             System.out.println("- Error downloading");
             e.printStackTrace();
             System.exit(1);
